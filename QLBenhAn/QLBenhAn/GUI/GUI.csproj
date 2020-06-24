@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{21161BF6-6549-42EC-B9F9-52A069F39818}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GUI</RootNamespace>
+    <AssemblyName>GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BacSi\FormBacSi_QuanLyBenhNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BacSi\FormBacSi_QuanLyBenhNhan.Designer.cs">
+      <DependentUpon>FormBacSi_QuanLyBenhNhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BenhNhan\FormForBenhNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BenhNhan\FormForBenhNhan.Designer.cs">
+      <DependentUpon>FormForBenhNhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanTriVien\FormAdmin_XemBenhAn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanTriVien\FormAdmin_XemBenhAn.Designer.cs">
+      <DependentUpon>FormAdmin_XemBenhAn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDangNhap.Designer.cs">
+      <DependentUpon>FormDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanTriVien\FormAdmin_QuanLyBacSi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanTriVien\FormAdmin_QuanLyBacSi.Designer.cs">
+      <DependentUpon>FormAdmin_QuanLyBacSi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanTriVien\FormAdmin_QuanLyBenhAn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanTriVien\FormAdmin_QuanLyBenhAn.Designer.cs">
+      <DependentUpon>FormAdmin_QuanLyBenhAn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanTriVien\FormAdmin_QuanLyBenhNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanTriVien\FormAdmin_QuanLyBenhNhan.Designer.cs">
+      <DependentUpon>FormAdmin_QuanLyBenhNhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanTriVien\FormAdmin_QuanLyKhoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanTriVien\FormAdmin_QuanLyKhoa.Designer.cs">
+      <DependentUpon>FormAdmin_QuanLyKhoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanTriVien\FormForAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanTriVien\FormForAdmin.Designer.cs">
+      <DependentUpon>FormForAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanTriVien\FormAdmin_QuanLyTaiKhoanAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanTriVien\FormAdmin_QuanLyTaiKhoanAdmin.Designer.cs">
+      <DependentUpon>FormAdmin_QuanLyTaiKhoanAdmin.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BacSi\FormBacSi_QuanLyBenhNhan.resx">
+      <DependentUpon>FormBacSi_QuanLyBenhNhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BenhNhan\FormForBenhNhan.resx">
+      <DependentUpon>FormForBenhNhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDangNhap.resx">
+      <DependentUpon>FormDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="QuanTriVien\FormAdmin_QuanLyBacSi.resx">
+      <DependentUpon>FormAdmin_QuanLyBacSi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanTriVien\FormAdmin_QuanLyBenhAn.resx">
+      <DependentUpon>FormAdmin_QuanLyBenhAn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanTriVien\FormAdmin_QuanLyBenhNhan.resx">
+      <DependentUpon>FormAdmin_QuanLyBenhNhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanTriVien\FormAdmin_QuanLyKhoa.resx">
+      <DependentUpon>FormAdmin_QuanLyKhoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanTriVien\FormForAdmin.resx">
+      <DependentUpon>FormForAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanTriVien\FormAdmin_QuanLyTaiKhoanAdmin.resx">
+      <DependentUpon>FormAdmin_QuanLyTaiKhoanAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanTriVien\FormAdmin_XemBenhAn.resx">
+      <DependentUpon>FormAdmin_XemBenhAn.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\DTO.DTO_tbl_BacSi.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{1a790f02-6d43-4920-8491-48b48708272b}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{25541731-3663-44f8-860c-607132ea5fb8}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\login_background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout_icon1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
